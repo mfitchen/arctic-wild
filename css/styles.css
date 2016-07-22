@@ -365,7 +365,7 @@ textarea {
   /* 2 */ }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Fjalla One", sans-serif; }
 
 img {
   width: 100%;
@@ -401,9 +401,12 @@ p {
   letter-spacing: 0.1em; }
 
 a {
+  font-size: 13px;
   font-weight: normal;
+  letter-spacing: 2px;
   text-decoration: none;
-  color: #2e2e2e; }
+  color: #ffffff;
+  text-transform: uppercase; }
   a:hover {
     color: lightgray; }
 
@@ -484,10 +487,49 @@ body {
 
 .container-nav {
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../img/moose.jpg");
   background-size: cover;
   background-position: center; }
+
+.navigation {
+  height: 125px;
+  width: 100vw;
+  padding: 0 250px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navigation-logo {
+  display: flex;
+  align-items: center; }
+  .navigation-logo a {
+    height: 100%; }
+    .navigation-logo a img {
+      height: 50%;
+      width: auto; }
+
+.navigation-menu {
+  height: 125px;
+  display: flex;
+  align-items: center; }
+  .navigation-menu a {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-left: 3em;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase; }
+    .navigation-menu a:hover {
+      color: #dc7725; }
+
+.alska-arctic-wild {
+  display: flex;
+  flex-direction: column; }
 
 .container-gallery {
   display: flex;
