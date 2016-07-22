@@ -1,0 +1,98 @@
+body {
+  @include box-sizing(border-box);
+}
+
+.container-body, .container-gallery {
+  width: 100%;
+}
+
+.container-nav {
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/moose.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-gallery-top, .container-gallery-bottom {
+  display: flex;
+}
+
+.gallery-image {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: all .3s ease-in-out .3s;
+}
+
+.gallery-image:hover {
+  .gallery-image-icon {
+    transform: scale(1.25);
+  }
+}
+
+.large {
+  width: 50vw;
+}
+
+.rafting {
+  background-image: url("../img/rafting.jpg");
+  background-position: bottom;
+}
+
+.custom {
+  background-image: url("../img/northern-lights.jpg");
+  background-position: bottom;
+}
+
+.small {
+  width: 25vw;
+}
+
+.base-camp {
+  background-image: url("../img/base-camp.jpg");
+}
+
+.backpacking {
+  background-image: url("../img/backpacking.jpg");
+}
+
+.canoe {
+  background-image: url("../img/canoe.jpg");
+  background-position: right;
+}
+
+.photography {
+  background-image: url("../img/photography.jpg");
+}
+
+.gallery-image-icon {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    opacity: 0.75;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
