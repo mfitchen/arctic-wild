@@ -1,142 +1,231 @@
 @media only screen and (max-width: 500px) {
 
-  div.story-text {
-    h1 {
-      font-size: 1em;
-    }
-    h6 {
-      font-size: 0.3em;
-      i.span-sm {
-        display: none;
-      }
-    }
-    p {
-      font-size: 0.75em;
-      span.span-sm {
-        display: none;
-      }
-    }
-  }
-
-}
-
-@media only screen and (min-width: 868px) {
-
-  .hamburger-menu, .hide {
+  .navigation, .alska-arctic-wild, .explore, .container-nav2, .grey-space {
     display: none;
   }
 
-  .menu-list {
-    display: block;
-    @include list-items(inline);
-  }
-
-  .nav-top {
-    padding-top: 22px;
-    padding-left: 20px;
-  }
-
-  .container-main {
-    width: 100%;
-    padding: 3%;
-  }
-
-  .main {
-    @include span-columns(12);
-  }
-
-  .story {
-    @include span-columns(6 of 12);
-  }
-
 }
 
-@media only screen and (min-width: 1048px) {
+@media only screen and (min-width: 501px) {
 
-  .hamburger-menu {
+  .navigation, .alska-arctic-wild, .explore, .container-nav2, .grey-space {
     display: none;
   }
 
-  .hide {
-    display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .navigation, .container-nav2, .grey-space {
+    display: none;
   }
 
-  .menu-list {
-    display: block;
-    @include list-items(inline);
+  .alska-arctic-wild, .explore {
+    display: flex;
   }
 
-  .nav-top {
-    padding-top: 22px;
-    padding-left: 20px;
-  }
-
-  .container-main-side-nav {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 3%;
-    @include span-columns(12);
-  }
-
-  .container-main {
-    @include span-columns(9 of 12);
-    padding: 25px 0.1em 0.1em 0.1em;
-    float: left;
-  }
-
-  .main {
-    @include span-columns(12);
-    padding: 0;
-  }
-
-  .story {
-    @include span-columns(12 of 12);
-    margin: 0 0 25px 0;
-    padding: 0 1em;
-    &-text {
-      padding: 1em 0;
+  .alska-arctic-wild {
+    width: 100vw;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 200px;
+      margin-bottom: 200px;
     }
   }
 
-  .container-side-nav {
-    @include span-columns(3 of 12);
-    float: left;
-    padding: 25px 0.1em 0.1em 0.1em;
-  }
-
-  .side-nav {
-    background-color: $color-primary;
-    color: black;
-    padding: 1em;
-  }
-
-  .side-nav-past-posts {
-    p {
-      margin-bottom: 5px;
-      &.side-nav-year {
-        margin-top: 25px;
-      }
-      a {
-        font-weight: normal;
-        text-decoration: none;
-        color: $color-fourth;
-        &:hover {
-          color: $color-fifth;
-        }
-      }
+  .explore {
+    margin-top: 225px;
+    position: relative;
+    a {
+      font-size: 15px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #0151c0;
+      padding: 15px 15px 13px 15px;
+      border: 1px solid #0151c0;
+      border-radius: 3px;
+    }
+    div.triangle {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #0151c0 transparent transparent transparent;
+      z-index: 10000;
     }
   }
 
-  .side-nav-month {
-    margin-left: 1em;
+  .container-gallery-top, .container-gallery-bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .large {
+    width: 100vw;
+  }
+
+  .small {
+    width: 50vw;
+  }
+
+  h1 {
+    font-size: 133px;
+    color: #ffffff;
+    font-family: 'Scheherazade', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: -33px 0 -50px 0;
+  }
+
+  h2 {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
   }
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1040px) {
 
-  .nav-top, .container-main-side-nav {
-    width: 1200px;
+  .navigation, .alska-arctic-wild, .explore, .container-nav2, .grey-space {
+    display: flex;
+  }
+
+  .alska-arctic-wild {
+    width: 100vw;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 0;
+      margin-bottom: 200px;
+    }
+  }
+
+  .container-gallery-top, .container-gallery-bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .large {
+    width: 100vw;
+  }
+
+  .small {
+    width: 50vw;
+  }
+
+  h1 {
+    font-size: 133px;
+    color: #ffffff;
+    font-family: 'Scheherazade', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: -33px 0 -50px 0;
+  }
+
+  h2 {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+  .alska-arctic-wild {
+    width: 100vw;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 0;
+      margin-bottom: 200px;
+    }
+  }
+
+  .container-nav2, .grey-space {
+    display: block;
+  }
+
+  .container-gallery-top, .container-gallery-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .large {
+    width: 50vw;
+  }
+
+  .small {
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 133px;
+    color: #ffffff;
+    font-family: 'Scheherazade', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: -33px 0 -50px 0;
+  }
+
+  h2 {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
   }
 
 }
