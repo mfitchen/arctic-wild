@@ -8,19 +8,24 @@ body {
 
 .container-nav {
   height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../img/moose.jpg");
+  justify-content: center;
+  background-image: url("../img/penguins.jpg");
   background-size: cover;
   background-position: center;
 }
 
+.container-nav-items {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .navigation {
-  height: 125px;
-  width: 100vw;
-  padding: 0 250px;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,10 +48,10 @@ body {
   display: flex;
   align-items: center;
   a {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
     letter-spacing: 2px;
-    margin-left: 3em;
+    margin-left: 2em;
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
@@ -57,8 +62,21 @@ body {
 }
 
 .alska-arctic-wild {
+  width: 100vw;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.white-bar {
+  width: 250px;
+  height: 5px;
+  background-color: #ffffff;
 }
 
 .container-gallery {
