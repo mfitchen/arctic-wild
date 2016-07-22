@@ -12,12 +12,12 @@ Project Requirements & Objectives  | Complete
 :------------- | :-------------: |
 *Required*: Using Flexbox, replicate the <a href="http://arcticwild.com/">Arctic Wild</a> home page. | --
 *Required*: At a minimum, build down as far as the gallery. | --
-*Objective*: Flexbox is used for laying out page elements, including the navigation bar(s) and image gallery. | --
+*Objective*: Flexbox is used for laying out page elements, including the navigation bar(s) and image gallery. | X
 *Objectives*: Gallery incorporates ``transition`` or ``transform`` for effect. | X
 *Objective*: Page is responsive at at least one breakpoint. | --
 *Objective*: Responds to: **Mobile Screens**. | --
 *Objective*: Responds to: **Tablet Screens**. | --
-*Objective*: Responds to: **Desktop Screens**. | --
+*Objective*: Responds to: **Desktop Screens**. | X
 
 ## Setup/Installation Requirements
 

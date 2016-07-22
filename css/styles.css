@@ -382,7 +382,7 @@ h1 {
   font-family: 'Scheherazade', serif;
   font-weight: normal;
   text-transform: uppercase;
-  margin: -50px 0; }
+  margin: -33px 0 -50px 0; }
 
 h2 {
   font-size: 21px;
@@ -506,22 +506,24 @@ body {
     font-size: 15px;
     font-weight: normal;
     letter-spacing: 2px;
-    margin-left: 2em;
+    margin-left: 33px;
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase; }
     .navigation-menu a:hover {
-      color: #dc7725; }
+      color: #00b1d1;
+      text-shadow: 1px 1px 1px #ffffff; }
 
 .alska-arctic-wild {
   width: 100vw;
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .alska-arctic-wild img {
     width: 80px;
-    height: 80px; }
+    height: 80px;
+    margin-bottom: 200px; }
 
 .white-bar {
   width: 250px;
@@ -594,6 +596,32 @@ body {
     margin: auto;
     margin: 0;
     padding: 0; }
+
+.explore {
+  margin-top: 225px;
+  position: relative; }
+  .explore a {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0151c0;
+    padding: 15px 15px 13px 15px;
+    border: 1px solid #0151c0;
+    border-radius: 3px; }
+  .explore div.triangle {
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #0151c0 transparent transparent transparent;
+    z-index: 10000; }
 
 @media only screen and (max-width: 500px) {
   div.story-text h1 {
