@@ -4,12 +4,30 @@
     display: none;
   }
 
+  h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+
 }
 
 @media only screen and (min-width: 501px) {
 
   .navigation, .alska-arctic-wild, .explore, .container-nav2, .grey-space {
     display: none;
+  }
+
+  h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
   }
 
 }
